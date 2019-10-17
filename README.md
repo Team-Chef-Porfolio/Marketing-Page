@@ -1,5 +1,8 @@
 # Marketing-Page
-html css javascript 
+
+Created the initial clone and pull
+
+html css javascript
 
 #Chef Portfolio
 PITCH
@@ -9,12 +12,12 @@ Pitch: As a food blogger, I want to be able to show off my work and recipes. I h
 
 This app contains two user types. A professional chef (who has the ability to log in) and a single user (no need to log in so no need for user data to be persisted on this user type) who can view portfolios.
 
-*Onboarding process for a professional chef. Include their location and contact info for people to reach them.
+\*Onboarding process for a professional chef. Include their location and contact info for people to reach them.
 
-*Login Page - After a user logs in, they'll be directed to their portfolio page where they can view what they have posted. They can also click to edit or delete posts.
+\*Login Page - After a user logs in, they'll be directed to their portfolio page where they can view what they have posted. They can also click to edit or delete posts.
 
-*Create Post Page - Allows a user to come in and create a post of a new recipe. Each post needs to have an image, and fields for title, meal type (breakfast, lunch, dinner, snack, dessert), ingredients, and instructions.  (You can hard code the image in for MVP-no need to upload photos for MVP. Stretch goals will include image uploading and the use of Cloudinary API etc. )
+\*Create Post Page - Allows a user to come in and create a post of a new recipe. Each post needs to have an image, and fields for title, meal type (breakfast, lunch, dinner, snack, dessert), ingredients, and instructions. (You can hard code the image in for MVP-no need to upload photos for MVP. Stretch goals will include image uploading and the use of Cloudinary API etc. )
 
-*Home Page for non-logged in users - Navigating to the home page users can view posts of different chefs laid out in a single format. (see foodgawker.com for example) Users can click on a single post to read the instructions for the recipe. They can filter by recipe title, meal type,  chef, and ingredients.
+\*Home Page for non-logged in users - Navigating to the home page users can view posts of different chefs laid out in a single format. (see foodgawker.com for example) Users can click on a single post to read the instructions for the recipe. They can filter by recipe title, meal type, chef, and ingredients.
 
-#Stretch Goal: Build an image uploader into the site to allow users the ability to upload their own pictures. (This will require some work with a package called Drop Zone and a service called cloudinary). Build a video uploader into the site to allow the chef to demo their recipes. 
+#Stretch Goal: Build an image uploader into the site to allow users the ability to upload their own pictures. (This will require some work with a package called Drop Zone and a service called cloudinary). Build a video uploader into the site to allow the chef to demo their recipes.
