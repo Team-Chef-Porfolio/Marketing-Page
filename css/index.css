@@ -290,6 +290,7 @@ p {
   justify-content: center;
 }
 .container #team .teamInfo {
+  background-color: white;
   flex-flow: wrap;
   align-items: center;
   width: 80%;
