@@ -136,6 +136,12 @@ html,
 body {
   font-family: 'Nunito', sans-serif;
   max-width: 100%;
+  background: #AAFFA9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 h1,
 h2,
@@ -167,7 +173,12 @@ p {
   justify-content: left;
   margin: 1% 2%;
   color: orange;
-  background-color: #ffff;
+  background: #AAFFA9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #navList {
   display: flex;
@@ -251,8 +262,8 @@ p {
 .container #team .teamInfo {
   flex-flow: wrap;
   align-items: center;
-  width: 50%;
-  height: 100px;
+  width: 80%;
+  height: 300px;
   border: 1px solid gray;
   margin-top: 2%;
 }
