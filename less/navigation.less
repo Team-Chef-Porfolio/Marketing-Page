@@ -1,3 +1,8 @@
+  .img1 {
+    @media @phone2{
+    display: none;
+    }
+  }
   #stash {
     display: flex;
     justify-content: left;
@@ -9,8 +14,24 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #11FFBD, #AAFFA9);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@media @phone{
+  justify-content: center;
+  flex-direction: column;
+  .img1{
+    //justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+  //justify-content: flex-end;
+  //align-content: center;
+  //box-sizing: border-box;
+  margin: 1% 35%;
+  border: 2px solid gray;
+  text-align: center;
+  border-radius: 5%;
+  width: 30%;
 
-
+}
 
 }
 
@@ -23,8 +44,21 @@
         a{
             //justify-content: space-evenly;
             margin: 1% 5%;
-        
+            @media @phone{
+              display: none;
+            }
+        i {
+          @media @phone {
+            margin: 1% 5%;
+          }
+
         }
+
+        }
+      
+        
+      
+        
         
     }
     
