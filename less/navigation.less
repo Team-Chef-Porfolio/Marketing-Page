@@ -1,12 +1,43 @@
-  .img1 {
+  #menu-toggle{
     @media @phone2{
     display: none;
+    }
+  }
+  .menuContainer{
+    display: inline-block;
+    @media @phone{
+    
+      #menu-toggle1,  #menu-toggle2, #menu-toggle3 {
+        //justify-content: flex-start;
+        //flex-direction: column;
+        //align-items: center;
+        width: 35px;
+        height: 5px;
+        background-color: #ffff00;
+        margin: 6px 0;
+        transition: all 0.4s;
+        cursor: pointer;
+      
+      }
+       #menu-toggle1.on {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+       #menu-toggle2.on {
+        opacity: 0;
+      }
+       #menu-toggle3.on {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    
+
     }
   }
   #stash {
     display: flex;
     justify-content: left;
-    margin: 1% 2%;
+    margin: 0% 1%;
     color: orange;
     background: #AAFFA9;
     /* fallback for old browsers */
@@ -17,11 +48,7 @@
 @media @phone{
   justify-content: center;
   flex-direction: column;
-  .img1{
-    //justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-  }
+  
   //justify-content: flex-end;
   //align-content: center;
   //box-sizing: border-box;
@@ -32,15 +59,19 @@
   width: 30%;
 
 }
-
 }
 
      #navList {
         display: flex;
         flex-direction: flex-end;
-        justify-content: right;
+        //justify-content: right;
         justify-content: space-around;
-        margin-left: 55%;
+        margin-left: 40%;
+        margin-bottom: 2%;
+        i{
+          color: orange;
+        }
+  
         a{
             //justify-content: space-evenly;
             margin: 1% 5%;
