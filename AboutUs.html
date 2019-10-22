@@ -18,23 +18,26 @@
 <body class="container">
     <header>
         <section>
-            <nav>
-                <div class="menuContainer" onclick="myFunction(this)">
-                    <div id="menu-toggle1"></div>
-                    <div id="menu-toggle2"></div>
-                    <div id="menu-toggle3"></div>
+            <nav id="wholeNav">
+                <div id="menuContainer" onclick="myFunction(this)">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
                 </div>
                 <div id="stash">
                      <h1>STASH</h1>
                 </div>
                 <nav id="navList">
-                    <a href="#">Account</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">About</a>
-                    <a href="#">Support</a>
-                    <a><i class="fa fa-search" style="font-size:24px"></i></a>
-                    <a><i class='fas fa-user' style='font-size:24px'></i></a>
+                    <a href="#" class="link">Account</a>
+                    <a href="#" class="link">Portfolio</a>
+                    <a href="#" class="link">About</a>
+                    <a href="#" class="link">Support</a>
+                    
                 </nav>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-search" style="font-size:24px"></i></a>
+                    <a href="#"><i class='fas fa-user' style='font-size:24px'></i></a>
+                </div>
             </nav>
         </section>
     </header>
@@ -104,6 +107,8 @@
  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
  <!-- <script>function myFunction(x) { x.classList.toggle("#menu-toggle");} </script> -->
  <script src="javascript/index.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
  
 
 </body>

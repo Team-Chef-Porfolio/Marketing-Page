@@ -1,13 +1,17 @@
-  #menu-toggle{
+ #wholeNav{
+display: flex;
+ 
+ #menu-toggle{
     @media @phone2{
     display: none;
     }
   }
-  .menuContainer{
-    display: inline-block;
-    @media @phone{
-    
-      #menu-toggle1,  #menu-toggle2, #menu-toggle3 {
+
+      #menuContainer {
+      
+        display: inline-block;
+        .one, .two, .three{
+        @media @phone {
         //justify-content: flex-start;
         //flex-direction: column;
         //align-items: center;
@@ -19,23 +23,23 @@
         cursor: pointer;
       
       }
-       #menu-toggle1.on {
+       #menuContainer.on .one{
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
       }
-       #menu-toggle2.on {
+       #menuContainer.on .two{
         opacity: 0;
       }
-       #menu-toggle3.on {
+       #menuContainer.on .three{
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
       }
-    
-
     }
+    
   }
+
   #stash {
-    display: flex;
+    //display: flex;
     justify-content: left;
     margin: 0% 1%;
     color: orange;
@@ -64,32 +68,44 @@
      #navList {
         display: flex;
         flex-direction: flex-end;
+        align-items: center;
         //justify-content: right;
-        justify-content: space-around;
-        margin-left: 40%;
-        margin-bottom: 2%;
-        i{
-          color: orange;
+        justify-content: space-between;
+        margin-left: 50%;
+        margin-bottom: 1%;
+        @media @phone{
+          display: none;
         }
-  
-        a{
-            //justify-content: space-evenly;
-            margin: 1% 5%;
+     
+         .link {
+           //justify-content: space-evenly;
+           margin: 1% 2%;
+           @media @phone{
+             display: none;
+           }
+         }
+        }
+        
+        .icons{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 1% 4%;
             @media @phone{
-              display: none;
+              margin-left: -25%;
+
             }
-        i {
-          @media @phone {
-            margin: 1% 5%;
+            
+          i {
+            margin: 5px;
+            //justify-content: space-between;
+            color: orange;
+            
           }
-
-        }
-
-        }
-      
         
-      
-        
+        }
+       
         
     }
+  
     

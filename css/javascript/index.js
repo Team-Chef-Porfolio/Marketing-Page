@@ -1,3 +1,3 @@
-$(".menuContainer").click(function () {
+$("#menuContainer").click(function () {
     $(this).toggleClass("on");
 });

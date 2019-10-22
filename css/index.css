@@ -173,13 +173,13 @@ p {
     display: none;
   }
 }
-.menuContainer {
+#menuContainer {
   display: inline-block;
 }
 @media (max-width: 500px) {
-  .menuContainer #menu-toggle1,
-  .menuContainer #menu-toggle2,
-  .menuContainer #menu-toggle3 {
+  #menuContainer .one,
+  #menuContainer .two,
+  #menuContainer .three {
     width: 35px;
     height: 5px;
     background-color: #ffff00;
@@ -187,17 +187,23 @@ p {
     transition: all 0.4s;
     cursor: pointer;
   }
-  .menuContainer #menu-toggle1.on {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  .menuContainer #menu-toggle2.on {
-    opacity: 0;
-  }
-  .menuContainer #menu-toggle3.on {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
+}
+#menuContainer .one #menuContainer.on .one,
+#menuContainer .two #menuContainer.on .one,
+#menuContainer .three #menuContainer.on .one {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+#menuContainer .one #menuContainer.on .two,
+#menuContainer .two #menuContainer.on .two,
+#menuContainer .three #menuContainer.on .two {
+  opacity: 0;
+}
+#menuContainer .one #menuContainer.on .three,
+#menuContainer .two #menuContainer.on .three,
+#menuContainer .three #menuContainer.on .three {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 #stash {
   display: flex;
