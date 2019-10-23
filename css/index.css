@@ -134,6 +134,7 @@ html {
 }
 html,
 body {
+  overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
   max-width: 100%;
   background: #AAFFA9;
@@ -142,6 +143,9 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #11FFBD, #AAFFA9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body {
+  position: relative;
 }
 h1,
 h2,
@@ -168,45 +172,59 @@ p {
   max-width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 501px) {
-  #menu-toggle {
-    display: none;
-  }
+#wholeNav {
+  display: flex;
 }
-#menuContainer {
-  display: inline-block;
+#wholeNav #dropdown {
+  display: none;
 }
 @media (max-width: 500px) {
-  #menuContainer .one,
-  #menuContainer .two,
-  #menuContainer .three {
-    width: 35px;
-    height: 5px;
-    background-color: #ffff00;
+  #wholeNav #dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  #wholeNav #dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #AAFFA9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+  }
+  #wholeNav #dropdown .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  #wholeNav #dropdown .dropdown-menu a a:hover {
+    background-color: orange;
+  }
+}
+#wholeNav #dropdown .show {
+  display: block;
+}
+@media (max-width: 500px) {
+  #wholeNav #dropdown .btn {
+    background: #AAFFA9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-transform: uppercase;
+    user-select: none;
     margin: 6px 0;
     transition: all 0.4s;
     cursor: pointer;
   }
 }
-#menuContainer .one #menuContainer.on .one,
-#menuContainer .two #menuContainer.on .one,
-#menuContainer .three #menuContainer.on .one {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-#menuContainer .one #menuContainer.on .two,
-#menuContainer .two #menuContainer.on .two,
-#menuContainer .three #menuContainer.on .two {
-  opacity: 0;
-}
-#menuContainer .one #menuContainer.on .three,
-#menuContainer .two #menuContainer.on .three,
-#menuContainer .three #menuContainer.on .three {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-#stash {
-  display: flex;
+#wholeNav #stash {
   justify-content: left;
   margin: 0% 1%;
   color: orange;
@@ -218,7 +236,7 @@ p {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 @media (max-width: 500px) {
-  #stash {
+  #wholeNav #stash {
     justify-content: center;
     flex-direction: column;
     margin: 1% 35%;
@@ -228,28 +246,41 @@ p {
     width: 30%;
   }
 }
-#navList {
+#wholeNav #navList {
   display: flex;
   flex-direction: flex-end;
-  justify-content: space-around;
-  margin-left: 40%;
-  margin-bottom: 2%;
-}
-#navList i {
-  color: orange;
-}
-#navList a {
-  margin: 1% 5%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50%;
+  margin-bottom: 1%;
 }
 @media (max-width: 500px) {
-  #navList a {
+  #wholeNav #navList {
     display: none;
   }
 }
+#wholeNav #navList .link {
+  margin: 1% 2%;
+}
 @media (max-width: 500px) {
-  #navList a i {
-    margin: 1% 5%;
+  #wholeNav #navList .link {
+    display: none;
   }
+}
+#wholeNav .icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 1% 4%;
+}
+@media (max-width: 500px) {
+  #wholeNav .icons {
+    margin-left: -25%;
+  }
+}
+#wholeNav .icons i {
+  margin: 5px;
+  color: orange;
 }
 #wrapper {
   max-width: 100%;

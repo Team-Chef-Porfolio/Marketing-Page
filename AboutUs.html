@@ -14,16 +14,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet/less" type="text/css" href="less/index.less" />
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
 </head>
 <body class="container">
     <header>
         <section>
             <nav id="wholeNav">
-                <div id="menuContainer" onclick="myFunction(this)">
-                    <div class="one"></div>
+                <div id="dropdown" class="show">
+                    <button id="header-menu-dp" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn" onclick="myFunction()">
+                        <i class="fa fa-bars" style="font-size:24px;color: orange"></i>
+                    </button>
+                    <div id="menu-drop" class="dropdown-menu">
+                         <a href="#" class="link">Account</a>
+                         <a href="#" class="link">Portfolio</a>
+                         <a href="#" class="link">About</a>
+                         <a href="#" class="link">Support</a>
+                    </div>
+                        
+                    <!-- <div class="one"></div>
                     <div class="two"></div>
-                    <div class="three"></div>
+                    <div class="three"></div> -->
                 </div>
+                
                 <div id="stash">
                      <h1>STASH</h1>
                 </div>
@@ -32,7 +44,6 @@
                     <a href="#" class="link">Portfolio</a>
                     <a href="#" class="link">About</a>
                     <a href="#" class="link">Support</a>
-                    
                 </nav>
                 <div class="icons">
                     <a href="#"><i class="fa fa-search" style="font-size:24px"></i></a>
@@ -107,9 +118,7 @@
  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
  <!-- <script>function myFunction(x) { x.classList.toggle("#menu-toggle");} </script> -->
  <script src="javascript/index.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
- 
+
 
 </body>
 </html>
