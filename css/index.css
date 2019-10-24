@@ -287,7 +287,9 @@ p {
 }
 #wrapper .wrapper {
   display: flex;
-  background-color: gray;
+  background-image: url("/assets/almonds-berries.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
@@ -336,7 +338,9 @@ p {
 }
 .container #about {
   display: flex;
-  background-color: gray;
+  background-image: url('/assets/cuisine.png');
+  background-repeat: none;
+  background-size: cover;
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
@@ -346,6 +350,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: orange;
 }
 .container #team {
   display: flex;
