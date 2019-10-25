@@ -1,0 +1,105 @@
+body {
+  background: "/img/littlechef.png";
+  background-repeat: no-repeat;
+  background-color: @background;
+  background-size: 700px;
+}
+
+.logo {
+  margin-left: 49%;
+  margin-top: 15%;
+  @media (max-width: 800px) {
+    margin-left: 29%;
+    margin-top: 45%;
+    background-size: 710px;
+  }
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.info {
+  margin-left: 40%;
+  width: 50%;
+  @media (max-width: 800px) {
+    margin-left: 32%;
+  }
+  @media (max-width: 500px) {
+    width: 70%;
+    background: @green;
+    padding: 2%;
+    margin-left: 13%;
+    margin-top: 90%;
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+.btn-a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  .btn-style(@green, @grey);
+  margin-left: 60%;
+}
+
+// @media (max-width: 800px) {
+//   body {
+//     background: "/img/littlechef.png";
+//     background-repeat: no-repeat;
+//     background-color: @background;
+//     background-size: 710px;
+//     // background-image: none;
+//   }
+//   .logo {
+//     width: 25px;
+//     margin-left: 10%;
+//     margin-top: 51%;
+//   }
+//   .info {
+//     margin-left: 12%;
+//     width: 50%;
+//     p {
+//       font-size: 15px;
+//     }
+//   }
+//   .btn {
+//     margin-left: 26%;
+
+//     button {
+//       .btn-style(@green, @grey);
+//     }
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   body {
+//     background: "/img/littlechef.png";
+//     background-repeat: no-repeat;
+//     background-color: @background;
+//     background-size: 510px;
+
+//     // background-image: none;
+//   }
+//   .logo {
+//     padding: 0;
+//     margin: auto;
+//     margin-top: 51%;
+//     // display: none;
+//   }
+//   .info {
+//     margin-top: 500px;
+//     margin-left: 12%;
+//     width: 50%;
+//     p {
+//       font-size: 15px;
+//     }
+//   }
+//   .btn {
+//     margin-left: 26%;
+
+//     button {
+//       .btn-style(@green, @grey);
+//     }
+//   }
+// }
