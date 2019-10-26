@@ -55,10 +55,22 @@
      }
 
     @media @phone{
-        
+
+         .descript {
+            //display: flex;
+            flex-direction: row nowrap; 
+            align-items: flex-start;
+            
+            span{
+            color: orange;
+            }
+        }
+
+
         .lorem{
             display: none;
-        };
+            
+        }
     }
     }
 }
@@ -66,9 +78,9 @@
         text-align: center;
         margin-bottom: 100px;
         color: orange;
-        // @media @phone{
-        //     display: none;
-        // }
+        @media @phone{
+            display: none;
+        }
        
      }
      
