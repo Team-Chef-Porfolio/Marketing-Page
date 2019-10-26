@@ -1,0 +1,133 @@
+ #wholeNav{
+display: flex;
+
+      #dropdown{
+        display: none;
+        @media @phone{
+          display: inline-block;
+          position: relative;
+          .dropdown-menu{
+            display: none;
+            position: absolute;
+            background: #AAFFA9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #11FFBD, #AAFFA9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            min-width: 180px;
+            box-shadow: 0px 8px 16px 0px;
+            z-index: 1;
+          
+            a{
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              a:hover{
+                background-color: orange;
+              }
+            }
+          }
+          
+        }
+        .show{
+          display: block;
+        }
+        .btn{
+        @media @phone {
+        //justify-content: flex-start;
+        //flex-direction: column;
+        //align-items: center;
+        background: #AAFFA9;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #11FFBD, #AAFFA9);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        text-transform: uppercase;
+        user-select: none;
+        margin: 6px 0;
+        transition: all 0.4s;
+        cursor: pointer;
+        
+        
+      }
+     
+    }
+    
+  }
+  
+
+  #stash {
+    //display: flex;
+    justify-content: left;
+    margin: 0% 1%;
+    color: orange;
+    background: #AAFFA9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@media @phone{
+  justify-content: center;
+  flex-direction: column;
+  
+  //justify-content: flex-end;
+  //align-content: center;
+  //box-sizing: border-box;
+  margin: 1% 35%;
+  border: 2px solid gray;
+  text-align: center;
+  border-radius: 5%;
+  width: 30%;
+
+}
+}
+
+     #navList {
+        display: flex;
+        flex-direction: flex-end;
+        align-items: center;
+        //justify-content: right;
+        justify-content: space-between;
+        margin-left: 50%;
+        margin-bottom: 1%;
+        @media @phone{
+          display: none;
+        }
+     
+         .link {
+           //justify-content: space-evenly;
+           margin: 1% 2%;
+           @media @phone{
+             display: none;
+           }
+         }
+        }
+        
+        .icons{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 1% 4%;
+            @media @phone{
+              margin-left: -25%;
+
+            }
+            
+          i {
+            margin: 5px;
+            //justify-content: space-between;
+            color: orange;
+            
+          }
+        
+        }
+       
+        
+    }
+  
+    
