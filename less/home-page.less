@@ -18,7 +18,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         
+         color: orange;
      }
     
 
@@ -42,16 +42,34 @@
     align-items: center;
     // height: 100%;
     // width: 100%;
-
+    @media @phone{
+        flex-direction: column;
      .organized, .shareable, .secure{
         border: 1px solid #FFAB2E;
         width: 33.3%;
         margin: 3% 1%;
-    
+     @media @phone2{
+         .descript{
+             display: none;
+         }
+     }
+
+    @media @phone{
+        
+        .lorem{
+            display: none;
+        };
     }
+    }
+}
      h2{
         text-align: center;
         margin-bottom: 100px;
+        color: orange;
+        // @media @phone{
+        //     display: none;
+        // }
+       
      }
      
 }

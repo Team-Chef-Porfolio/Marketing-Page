@@ -299,6 +299,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: orange;
 }
 #wrapper .wrapper .joinBtn {
   display: flex;
@@ -338,7 +339,7 @@ p {
 }
 .container #about {
   display: flex;
-  background-image: url('/assets/cuisine.png');
+  background-image: url('/assets/cook-cooking.png');
   background-repeat: none;
   background-size: cover;
   justify-content: center;
